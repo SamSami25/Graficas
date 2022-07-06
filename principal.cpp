@@ -120,8 +120,8 @@ void Principal::dibujar()
     pincel.setColor(ejes);
     painter.setPen(ejes);
 
-    //painter.drawLine(x+50,y+450-promedio,393,y+450-promedio);
-    //painter.drawLine(x+50,y+450-promedio,393,y+450-promedio);
+    painter.drawLine(x+48,y+455,100,y-50000);
+    painter.drawLine(x+48,y+455,385,y+455);
 }
 
 
