@@ -78,7 +78,6 @@ void Principal::dibujar()
     // Establecer el color al brush (relleno)
     painter.setBrush(colorRelleno);
 
-
     // Obtener Datos para la Segunda Nota
     int nota2 = ui->inNota2->value();
     int altoNota2 = this->getAlto(nota2);
@@ -101,7 +100,30 @@ void Principal::dibujar()
     int increYN3 = this->incrementoY(altoNota3);
     // Dibujar la Tercera Barra
     painter.drawRect(x+290,y+50+increYN3,100,altoNota3);
+
+
+    // Obtener datos del Promedio de las Notas
+    QColor linea(91, 39, 125);
+    pincel.setWidth(105);
+    pincel.setColor(linea);
+    pincel.setWidth(105);
+    pincel.setWidthF(5);
+    painter.setPen(pincel);
+
+    float promedioNotas = (nota1 + nota2 + nota3) / 3;
+    int promedio = this->getAlto(promedioNotas);
+
+    painter.drawLine(x+50,y+450-promedio,393,y+450-promedio);
+
+    // Ejes de "x" y "y"
+    QColor ejes(91, 39, 125);
+    pincel.setColor(ejes);
+    painter.setPen(ejes);
+
+    //painter.drawLine(x+50,y+450-promedio,393,y+450-promedio);
+    //painter.drawLine(x+50,y+450-promedio,393,y+450-promedio);
 }
+
 
 int Principal::getAlto(int valor)
 {
@@ -119,9 +141,9 @@ void Principal::on_actionGuardar_triggered()
                 this,"Guardar imagen",QString(),"Imagenes (*.png)");
     if (!nombreArchivo.isEmpty()){
         if (lienzo.save(nombreArchivo))
-            QMessageBox::information(this,"Guardar imagen","Archivo guarado en: " + nombreArchivo);
+            QMessageBox::information(this,"Guardar imagen","Archivo Guardado en: " + nombreArchivo);
         else
-            QMessageBox::warning(this,"Guardar imagen","No se pudo guardar el archivo");
+            QMessageBox::warning(this,"Guardar imagen","No se pudo Guardar el Archivo");
     }
 }
 

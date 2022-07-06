@@ -5,6 +5,7 @@
 #include <QPainter>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QPen>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Principal; }

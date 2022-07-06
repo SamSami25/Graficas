@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>img/Save.ico</file>
+        <file>img/salvado.png</file>
+        <file>img/disquete.png</file>
+        <file>img/SaveS.ico</file>
     </qresource>
 </RCC>
