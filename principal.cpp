@@ -101,7 +101,6 @@ void Principal::dibujar()
     // Dibujar la Tercera Barra
     painter.drawRect(x+290,y+50+increYN3,100,altoNota3);
 
-
     // Obtener datos del Promedio de las Notas
     QColor linea(91, 39, 125);
     pincel.setWidth(105);
@@ -120,10 +119,28 @@ void Principal::dibujar()
     pincel.setColor(ejes);
     painter.setPen(ejes);
 
-    painter.drawLine(x+48,y+455,100,y-50000);
-    painter.drawLine(x+48,y+455,385,y+455);
-}
+    painter.drawLine(50,480,50,30);
+    painter.drawLine(10,450,455,450);
 
+    // Texto de letras "x" y "y"
+    painter.setPen(Qt::black);
+    painter.setFont(QFont("BubbleGum",13));
+    painter.drawText(460,455,"x");
+    painter.drawText(45,25,"y");
+
+    // Obtener las divisiones de las Barras
+    painter.drawText(90,472,"N1");
+    painter.drawText(200,472,"N2");
+    painter.drawText(300,472,"N3");
+
+    // Obtener las divisiones entre números
+    painter.setFont(QFont("Coffee Shop",19));
+    // Ciclo en ciclo
+    for(int i=0; i<20; i+=5){
+        painter.drawText(28,392,"i");
+    }
+
+}
 
 int Principal::getAlto(int valor)
 {
@@ -145,11 +162,6 @@ void Principal::on_actionGuardar_triggered()
         else
             QMessageBox::warning(this,"Guardar imagen","No se pudo Guardar el Archivo");
     }
-}
-
-void Principal::on_pushButton_clicked(bool checked)
-{
-
 }
 
 void Principal::on_inNota1_valueChanged(int arg1)

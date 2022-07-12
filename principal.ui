@@ -100,13 +100,6 @@
        </layout>
       </widget>
      </item>
-     <item>
-      <widget class="QPushButton" name="outCalcular">
-       <property name="text">
-        <string>Promediar</string>
-       </property>
-      </widget>
-     </item>
     </layout>
    </widget>
   </widget>
@@ -116,7 +109,7 @@
      <x>0</x>
      <y>0</y>
      <width>739</width>
-     <height>27</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivo">
