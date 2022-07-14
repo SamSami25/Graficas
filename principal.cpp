@@ -130,14 +130,16 @@ void Principal::dibujar()
 
     // Obtener las divisiones de las Barras
     painter.drawText(90,472,"N1");
-    painter.drawText(200,472,"N2");
-    painter.drawText(300,472,"N3");
+    painter.drawText(210,472,"N2");
+    painter.drawText(330,472,"N3");
 
     // Obtener las divisiones entre números
-    painter.setFont(QFont("Coffee Shop",19));
+    painter.setFont(QFont("Cambria",10));
     // Ciclo en ciclo
     for(int i=0; i<20; i+=5){
-        painter.drawText(28,392,"i");
+        painter.drawText(30,435,"5");
+        painter.drawText(28,415,"10");
+        painter.drawText(28,395,"15");
     }
 
 }

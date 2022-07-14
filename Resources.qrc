@@ -4,5 +4,7 @@
         <file>img/salvado.png</file>
         <file>img/disquete.png</file>
         <file>img/SaveS.ico</file>
+        <file>img/Guardar.ico</file>
+        <file>img/Grafica.png</file>
     </qresource>
 </RCC>

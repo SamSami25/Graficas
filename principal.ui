@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Principal</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(221, 179, 255);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="outCuadro">
     <property name="geometry">
@@ -29,6 +32,9 @@
       <height>500</height>
      </size>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(213, 224, 255);</string>
+    </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
     </property>
@@ -42,21 +48,27 @@
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>532</x>
       <y>10</y>
-      <width>153</width>
-      <height>208</height>
+      <width>160</width>
+      <height>250</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QGroupBox" name="groupBox">
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Amarillo&quot;;</string>
+       </property>
        <property name="title">
         <string>Notas</string>
        </property>
        <layout class="QGridLayout" name="gridLayout">
         <item row="0" column="0">
          <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">font: 9pt &quot;Amarillo&quot;;</string>
+          </property>
           <property name="text">
            <string>Nota 1</string>
           </property>
@@ -64,6 +76,9 @@
         </item>
         <item row="0" column="1">
          <widget class="QSpinBox" name="inNota1">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;Cambria&quot;;</string>
+          </property>
           <property name="maximum">
            <number>100</number>
           </property>
@@ -71,6 +86,9 @@
         </item>
         <item row="1" column="0">
          <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">font: 9pt &quot;Amarillo&quot;;</string>
+          </property>
           <property name="text">
            <string>Nota 2</string>
           </property>
@@ -78,6 +96,9 @@
         </item>
         <item row="1" column="1">
          <widget class="QSpinBox" name="inNota2">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;Cambria&quot;;</string>
+          </property>
           <property name="maximum">
            <number>100</number>
           </property>
@@ -85,6 +106,9 @@
         </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">font: 9pt &quot;Amarillo&quot;;</string>
+          </property>
           <property name="text">
            <string>Nota 3</string>
           </property>
@@ -92,6 +116,9 @@
         </item>
         <item row="2" column="1">
          <widget class="QSpinBox" name="inNota3">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;Cambria&quot;;</string>
+          </property>
           <property name="maximum">
            <number>100</number>
           </property>
@@ -147,6 +174,10 @@
    </property>
   </action>
   <action name="actionSalir">
+   <property name="icon">
+    <iconset>
+     <normaloff>img/salida.png</normaloff>img/salida.png</iconset>
+   </property>
    <property name="text">
     <string>Salir</string>
    </property>
