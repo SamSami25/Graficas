@@ -140,6 +140,23 @@ void Principal::dibujar()
         painter.drawText(30,435,"5");
         painter.drawText(28,415,"10");
         painter.drawText(28,395,"15");
+        painter.drawText(28,375,"20");
+        painter.drawText(28,355,"25");
+        painter.drawText(28,335,"30");
+        painter.drawText(28,315,"35");
+        painter.drawText(28,295,"40");
+        painter.drawText(28,275,"45");
+        painter.drawText(28,255,"50");
+        painter.drawText(28,235,"55");
+        painter.drawText(28,215,"60");
+        painter.drawText(28,195,"65");
+        painter.drawText(28,175,"70");
+        painter.drawText(28,155,"75");
+        painter.drawText(28,135,"80");
+        painter.drawText(28,115,"85");
+        painter.drawText(28,95,"90");
+        painter.drawText(28,75,"95");
+        painter.drawText(26,55,"100");
     }
 
 }
