@@ -1,10 +1,10 @@
 <RCC>
     <qresource prefix="/">
-        <file>img/Save.ico</file>
         <file>img/salvado.png</file>
         <file>img/disquete.png</file>
-        <file>img/SaveS.ico</file>
-        <file>img/Guardar.ico</file>
         <file>img/Grafica.png</file>
+        <file>img/salida.png</file>
+        <file>img/guardars.png</file>
+        <file>img/Universidad.png</file>
     </qresource>
 </RCC>

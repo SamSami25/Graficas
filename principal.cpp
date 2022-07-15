@@ -183,6 +183,19 @@ void Principal::on_actionGuardar_triggered()
     }
 }
 
+void Principal::on_actionAcerca_de_triggered()
+{
+    // Crear un objeto del cuadro de diálogo
+    Acerca *dialog = new Acerca(this);
+    // Enviar datos a la otra ventana
+    dialog->setVersion(VERSION);
+    // Mostrar la venta en modo MODAL
+    dialog->exec();
+    // Luego de cerrar la ventana, se acceden a los datos de la misma
+    qDebug() << dialog->valor();
+}
+
+
 void Principal::on_inNota1_valueChanged(int arg1)
 {
     dibujar();
@@ -197,3 +210,4 @@ void Principal::on_inNota3_valueChanged(int arg1)
 {
     dibujar();
 }
+

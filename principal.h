@@ -3,9 +3,14 @@
 
 #include <QMainWindow>
 #include <QPainter>
+#include <QDebug>
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QPen>
+
+#include "acerca.h"
+
+#define VERSION "0.2"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Principal; }
@@ -25,6 +30,8 @@ private slots:
     void on_inNota1_valueChanged(int arg1);
     void on_inNota2_valueChanged(int arg1);
     void on_inNota3_valueChanged(int arg1);
+
+    void on_actionAcerca_de_triggered();
 
 protected:
 

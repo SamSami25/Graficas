@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Principal</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="Resources.qrc">
+    <normaloff>:/img/Grafica.png</normaloff>:/img/Grafica.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(221, 179, 255);</string>
   </property>
@@ -48,10 +52,10 @@
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>532</x>
-      <y>10</y>
-      <width>160</width>
-      <height>250</height>
+      <x>520</x>
+      <y>30</y>
+      <width>164</width>
+      <height>211</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -84,26 +88,6 @@
           </property>
          </widget>
         </item>
-        <item row="1" column="0">
-         <widget class="QLabel" name="label_2">
-          <property name="styleSheet">
-           <string notr="true">font: 9pt &quot;Amarillo&quot;;</string>
-          </property>
-          <property name="text">
-           <string>Nota 2</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <widget class="QSpinBox" name="inNota2">
-          <property name="styleSheet">
-           <string notr="true">font: 16pt &quot;Cambria&quot;;</string>
-          </property>
-          <property name="maximum">
-           <number>100</number>
-          </property>
-         </widget>
-        </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_3">
           <property name="styleSheet">
@@ -121,6 +105,26 @@
           </property>
           <property name="maximum">
            <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="inNota2">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;Cambria&quot;;</string>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">font: 9pt &quot;Amarillo&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Nota 2</string>
           </property>
          </widget>
         </item>
@@ -146,7 +150,14 @@
     <addaction name="actionGuardar"/>
     <addaction name="actionSalir"/>
    </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionAcerca_de"/>
+   </widget>
    <addaction name="menuArchivo"/>
+   <addaction name="menuAyuda"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -164,7 +175,7 @@
   <action name="actionGuardar">
    <property name="icon">
     <iconset resource="Resources.qrc">
-     <normaloff>:/img/Save.ico</normaloff>:/img/Save.ico</iconset>
+     <normaloff>:/img/guardars.png</normaloff>:/img/guardars.png</iconset>
    </property>
    <property name="text">
     <string>Guardar</string>
@@ -175,14 +186,23 @@
   </action>
   <action name="actionSalir">
    <property name="icon">
-    <iconset>
-     <normaloff>img/salida.png</normaloff>img/salida.png</iconset>
+    <iconset resource="Resources.qrc">
+     <normaloff>:/img/salida.png</normaloff>:/img/salida.png</iconset>
    </property>
    <property name="text">
     <string>Salir</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAcerca_de">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/img/Grafica.png</normaloff>:/img/Grafica.png</iconset>
+   </property>
+   <property name="text">
+    <string>Acerca de</string>
    </property>
   </action>
  </widget>
